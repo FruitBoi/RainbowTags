@@ -6,16 +6,21 @@ This mod makes use of [EXILED](https://gitlab.com/Galaxy119/EXILED) for [SCP:SL]
 ## Configuration
 
 ```yaml
-#Should the plugin be enabled?
-rainbowtags_enable: true
-#Time between tag changes in seconds.
-rainbowtags_taginterval: 0.5 
-#Should we use a custom color sequence?
-rainbowtags_usecustomsequence: false 
-#Color sequence to use. Must set UseCustomSequence to true.
-rainbowtags_colorsequence: pink, red, brown, silver, light_green 
-#List of groups to enable RainbowTags for.
-rainbowtags_activegroups: [owner, admin, moderator] 
+rainbow_tags:
+  is_enabled: true
+  use_custom_sequence: false
+  tag_interval: 0.5
+  active_groups:
+  - owner
+  - admin
+  - moderator
+  custom_sequence:
+  - red
+  - orange
+  - yellow
+  - green
+  - blue_green
+  - magenta
 ```
 
 **Valid Colours**:
